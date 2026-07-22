@@ -14,6 +14,9 @@
 <meta property="og:url" content="https://pcelarstvolasic.ba/">
 <meta property="og:locale" content="hr_HR">
 <meta property="og:image" content="https://pcelarstvolasic.ba/images/og-image.jpg">
+<link rel="alternate" hreflang="hr" href="https://pcelarstvolasic.ba/">
+<link rel="alternate" hreflang="en" href="https://pcelarstvolasic.ba/en/">
+<link rel="alternate" hreflang="x-default" href="https://pcelarstvolasic.ba/">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -220,6 +223,16 @@
     .gallery-grid{grid-template-columns:repeat(2,1fr);}
   }
 
+  .lang-switch{
+    position:absolute; top:22px; right:24px; z-index:5;
+    font-family:'JetBrains Mono', monospace; font-size:12px; letter-spacing:0.06em;
+  }
+  .lang-switch a{
+    color:#C9B180; text-decoration:none; padding:4px 8px;
+  }
+  .lang-switch a.active{color:var(--amber); font-weight:600;}
+  .lang-switch span{color:#6b5636; margin:0 1px;}
+
   :focus-visible{outline:2px solid var(--amber); outline-offset:3px;}
   @media (prefers-reduced-motion: reduce){
     html{scroll-behavior:auto;}
@@ -230,6 +243,7 @@
 <body>
 
   <section class="hero">
+    <nav class="lang-switch"><a href="/" class="active">HR</a><span>/</span><a href="/en/">EN</a></nav>
     <div class="wrap hero-inner">
       <span class="eyebrow">Pčelarstvo Lasić · Uzarići, Široki Brijeg</span>
       <h1>Med ravno s paše hercegovačkog krša do vašeg stola</h1>
